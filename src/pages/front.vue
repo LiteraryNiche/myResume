@@ -55,7 +55,7 @@
               <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <h4>经验</h4>
-                    <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+calcDate(userInfo.workSince)+userInfo.exp[2]}}</div>
+                    <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+(calcDate(userInfo.workSince)-1)+userInfo.exp[2]}}</div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                   <div class="item wow inShow" data-wow-delay="0.6s">
@@ -239,36 +239,36 @@
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-bg section-header-bg"></div>
-        <div class="section-bg section-content-bg"></div>
-        <header class="header">
-          <div class="content-box">
-            <h2 class="title">常逛&nbsp;/&nbsp;
-              <small><i>Usually</i></small>
-            </h2>
-            <div class="description">经常逛的技术或者设计相关网站</div>
-          </div>
-        </header>
-        <div class="section-content">
-          <div class="row usually">
-            <div class="col-lg-4 col-md-6" v-for="u in userInfo.usually">
-              <a v-if="u.link" :href="u.link" target="_blank" class="item" :title="u.link">
-                <i class="fa fa-github"></i>
-                <h3 class="text-light">{{u.name}}</h3>
-                <p>{{u.description}}</p>
-              </a>
-              <div v-if="!u.link" class="item" :title="u.link">
-                <i class="fa fa-github"></i>
-                <h3 class="text-light">{{u.name}}</h3>
-                <p>{{u.description}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--<section class="section">-->
+      <!--<div class="container">-->
+        <!--<div class="section-bg section-header-bg"></div>-->
+        <!--<div class="section-bg section-content-bg"></div>-->
+        <!--<header class="header">-->
+          <!--<div class="content-box">-->
+            <!--<h2 class="title">常逛&nbsp;/&nbsp;-->
+              <!--<small><i>Usually</i></small>-->
+            <!--</h2>-->
+            <!--<div class="description">经常逛的技术或者设计相关网站</div>-->
+          <!--</div>-->
+        <!--</header>-->
+        <!--<div class="section-content">-->
+          <!--<div class="row usually">-->
+            <!--<div class="col-lg-4 col-md-6" v-for="u in userInfo.usually">-->
+              <!--<a v-if="u.link" :href="u.link" target="_blank" class="item" :title="u.link">-->
+                <!--<i class="fa fa-github"></i>-->
+                <!--<h3 class="text-light">{{u.name}}</h3>-->
+                <!--<p>{{u.description}}</p>-->
+              <!--</a>-->
+              <!--<div v-if="!u.link" class="item" :title="u.link">-->
+                <!--<i class="fa fa-github"></i>-->
+                <!--<h3 class="text-light">{{u.name}}</h3>-->
+                <!--<p>{{u.description}}</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</section>-->
     <section class="section no-print">
       <div class="container">
         <div class="section-bg section-header-bg"></div>
