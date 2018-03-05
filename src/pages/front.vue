@@ -13,7 +13,7 @@
         <header class="header">
           <div class="header-box">
             <div class="avatar wow inShow no-print">
-              <img src="/static/images/touxiang.jpg" alt="logo" class="img-responsive">
+              <img src="../../static/images/touxiang.jpg" alt="logo" class="img-responsive">
             </div>
             <h1 class="name text-center wow inShow no-print">{{userInfo.nickname}}</h1>
             <h1 class="name text-center hide show-print-block">{{userInfo.name}}</h1>
@@ -359,10 +359,11 @@
     },
     created(){
       var self = this;
-      this.$http.get('/static/resume.json').then((res) =>{
-        self.userInfo = res.body;
-        this.$parent.loading = true;
-      });
+      const res = require('../../static/resume.json')
+      // this.$http.get('/static/resume.json').then((res) =>{
+      self.userInfo = res;
+      this.$parent.loading = true;
+      // });
     },
     methods:{
       calcDate(birthday){
