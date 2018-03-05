@@ -10,7 +10,7 @@ clone项目，进入dev分支
 ### 编译
     npm builds
 ### 在线预览
-[https://yxuchen.github.io/myResume/dist/#/)
+https://literaryniche.github.io/myResume/dist/#/
 ### 打印预览
 打开上述链接，在浏览器中按
     ctrl+p
