@@ -69,12 +69,12 @@
                     <div class="info">{{userInfo.qq.number}}</div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                  <a class="item wow inShow" data-wow-delay="0.75s" :href="userInfo.github" target="_blank">
-                    <h4>Github</h4>
-                    <div class="info">{{userInfo.github}}</div>
-                  </a>
-                </div>
+                <!--<div class="col-md-6 col-lg-3">-->
+                  <!--<a class="item wow inShow" data-wow-delay="0.75s" :href="userInfo.github" target="_blank">-->
+                    <!--<h4>Github</h4>-->
+                    <!--<div class="info">{{userInfo.github}}</div>-->
+                  <!--</a>-->
+                <!--</div>-->
               </div>
             </div>
           </div>
